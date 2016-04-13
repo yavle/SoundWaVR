@@ -45,6 +45,9 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+     <Compile Include="Assets\Cardboard\DemoScene\FPS.cs" />
+     <Compile Include="Assets\Cardboard\DemoScene\Teleport.cs" />
+     <Compile Include="Assets\Cardboard\Legacy\DemoScene\TeleportLegacyUI.cs" />
      <Compile Include="Assets\Cardboard\Legacy\Scripts\CardboardOnGUI.cs" />
      <Compile Include="Assets\Cardboard\Legacy\Scripts\CardboardOnGUIMouse.cs" />
      <Compile Include="Assets\Cardboard\Legacy\Scripts\CardboardOnGUIWindow.cs" />
@@ -74,6 +77,7 @@
      <Compile Include="Assets\Cardboard\Scripts\VRDevices\UnityEditorDevice.cs" />
      <Compile Include="Assets\SoundFieldManager.cs" />
      <Compile Include="Assets\SoundPadCollideHandler.cs" />
+     <Compile Include="Assets\SphereScript.cs" />
      <Compile Include="Assets\WaveGrid.cs" />
      <None Include="Assets\Cardboard\Resources\SkyboxMesh.shader" />
      <None Include="Assets\Cardboard\Distortion\CardboardDistortion.cginc" />

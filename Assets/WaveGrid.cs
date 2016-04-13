@@ -124,7 +124,7 @@ public class WaveGrid : MonoBehaviour {
 		if (Mathf.Sign (Mathf.Sqrt (Mathf.Pow ((transform.position.x - soundEventX), 2) + Mathf.Pow ((transform.position.z - soundEventZ), 2)) - soundEventHorizon) != soundEventAhead) {
 			soundEventAhead = Mathf.Sign (Mathf.Sqrt (Mathf.Pow ((transform.position.x - soundEventX), 2) + Mathf.Pow ((transform.position.z - soundEventZ), 2)) - soundEventHorizon);
 			
-			source.PlayOneShot(soundFx,volumeByDtAndDS (soundEventTime, Mathf.Sqrt (Mathf.Pow ((transform.position.x - soundEventX), 2) + Mathf.Pow ((transform.position.z - soundEventZ), 2))));
+			source.PlayOneShot(soundFx,0.6 + volumeByDtAndDS (soundEventTime, Mathf.Sqrt (Mathf.Pow ((transform.position.x - soundEventX), 2) + Mathf.Pow ((transform.position.z - soundEventZ), 2))));
 
 		}
 		if (soundEventAhead < 0) {
